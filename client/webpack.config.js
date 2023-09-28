@@ -14,11 +14,17 @@ module.exports = (env, argv) => {
   });
 
   if (argv.mode !== "production") {
+    // In dev, suppress the "InjectManifest has been called multiple times" warning by reaching into
+    // the private properties of the plugin and making sure it never ends up in the state
+    // where it makes that warning.
     Object.defineProperty(injectManifest, "alreadyCalled", {
       get() {
         return false;
       },
-      set() {},
+      set() {
+        // do nothing; the internals try to set it to true, which then results in a warning
+        // on the next run of webpack.
+      },
     });
   }
 
@@ -37,7 +43,7 @@ module.exports = (env, argv) => {
       // Webpack plugin that generates our html file and injects our bundles.
       new HtmlWebpackPlugin({
         template: "./index.html",
-        title: "Contact Cards",
+        title: "Text Editor",
       }),
 
       injectManifest,
@@ -87,3 +93,18 @@ module.exports = (env, argv) => {
     },
   };
 };
+
+// const injectManifest = new InjectManifest({
+//   swSrc: "./src-sw.js",
+//   swDest: "src-sw.js",
+//   ...(argv.mode !== "production" ? { exclude: [/./] } : {}),
+// });
+
+// if (argv.mode !== "production") {
+//   Object.defineProperty(injectManifest, "alreadyCalled", {
+//     get() {
+//       return false;
+//     },
+//     set() {},
+//   });
+// }

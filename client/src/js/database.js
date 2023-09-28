@@ -7,18 +7,21 @@ const initdb = async () =>
         console.log("jate database already exists");
         return;
       }
-      db.createObjectStore("jate", { keyPath: "id", autoIncrement: true });
+      db.createObjectStore("jate", {
+        keyPath: "id",
+        autoIncrement: true,
+      });
       console.log("jate database created");
     },
   });
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
-export const putDb = async (content) => {
+export const putDb = async (lineNumbers, value) => {
   console.log("PUT request to update the database");
   const jateDB = await openDB("jate", 1);
   const tx = jateDB.transaction("jate", "readwrite");
   const store = tx.objectStore("jate");
-  const request = store.put({ id: id, text: content });
+  const request = store.put({ id: lineNumbers, text: value });
   const result = await request;
   console.log("Data saved to the database", result);
 };
