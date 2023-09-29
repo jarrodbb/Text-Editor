@@ -1,50 +1,51 @@
+// Required HtmlWebpackPlugin from html plugin
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+// Required WebPwaManifest from pwa manifest
 const WebpackPwaManifest = require("webpack-pwa-manifest");
 const path = require("path");
+// Required InjectManifest from workbox plugin
 const { InjectManifest } = require("workbox-webpack-plugin");
 
-
-module.exports = (env, argv) =>  {
-
-const injectManifest = new InjectManifest({
-  swSrc: "./src-sw.js",
-  swDest: "src-sw.js",
-  ...(argv.mode !== "production" ? { exclude: [/./] } : {}),
-});
-
-if (argv.mode !== "production") {
-  Object.defineProperty(injectManifest, "alreadyCalled", {
-    get() {
-      return false;
-    },
-    set() {},
+module.exports = (env, argv) => {
+  const injectManifest = new InjectManifest({
+    swSrc: "./src-sw.js",
+    swDest: "src-sw.js",
+    ...(argv.mode !== "production" ? { exclude: [/./] } : {}),
   });
-}
 
+  if (argv.mode !== "production") {
+    Object.defineProperty(injectManifest, "alreadyCalled", {
+      get() {
+        return false;
+      },
+      set() {},
+    });
+  }
 
- return {
+  return {
     mode: "development",
+    //Entry points for files
     entry: {
       main: "./src/js/index.js",
       install: "./src/js/install.js",
     },
+    //Output for bundles
     output: {
       filename: "[name].bundle.js",
       path: path.resolve(__dirname, "dist"),
     },
 
     plugins: [
+      //Webpack plugin to generate HTML file as well as injecting the budles
       new HtmlWebpackPlugin({
         template: "./index.html",
         title: "Text Editor",
       }),
 
+      //Webpack plugin to inject custom service worker
       injectManifest,
-      // new InjectManifest({
-      //   swSrc: './src-sw.js',
-      //   swDest: 'service-worker.js',
-      // }),
 
+      //Webpack plugin to create a manifest.json
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
@@ -67,6 +68,7 @@ if (argv.mode !== "production") {
 
     module: {
       rules: [
+        //CSS loader
         {
           test: /\.css$/i,
           use: ["style-loader", "css-loader"],
@@ -74,7 +76,7 @@ if (argv.mode !== "production") {
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
-          // We use babel-loader in order to use ES6.
+          //babel loder to allow for using ES6
           use: {
             loader: "babel-loader",
             options: {
@@ -87,7 +89,6 @@ if (argv.mode !== "production") {
           },
         },
       ],
-    }
-    }
+    },
+  };
 };
-
