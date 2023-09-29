@@ -1,6 +1,10 @@
+//Import Workbox
 import { Workbox } from "workbox-window";
+// Import editor
 import Editor from "./editor";
+//database
 import "./database";
+//Import CSS
 import "../css/style.css";
 
 const main = document.querySelector("#main");
@@ -31,3 +35,5 @@ if ("serviceWorker" in navigator) {
 } else {
   console.error("Service workers are not supported in this browser.");
 }
+
+//Service worker to be added at the entry point of the application
