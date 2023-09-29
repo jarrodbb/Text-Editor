@@ -7,7 +7,9 @@ import "./database";
 //Import CSS
 import "../css/style.css";
 
+//Query selector to select id=main and assign to constant
 const main = document.querySelector("#main");
+//Set main to empty string
 main.innerHTML = "";
 
 const loadSpinner = () => {

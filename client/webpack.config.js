@@ -23,7 +23,7 @@ module.exports = (env, argv) => {
   }
 
   return {
-    mode: "development",
+    mode: "production",
     //Entry points for files
     entry: {
       main: "./src/js/index.js",
