@@ -31,7 +31,7 @@ The by utilising a number of methods using the ```idb``` package data is stored 
 
 ### Running the application
 
-## Client Package.json
+### Client Package.json
 
 Ensure the following are included in the client package.json
 
