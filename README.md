@@ -164,13 +164,21 @@ The user is able to add text to the text editor application in the browser as we
 
 ### Application's registered service worker
 
+Service worker included. Static assets are pre cached upon loading as well as subsequent pages and static assets
+
 <img width="1727" alt="Screenshot 2023-09-30 at 3 42 00 pm" src="https://github.com/jarrodbb/Text-Editor/assets/132813348/aa6037ed-9a89-407b-88de-76466187a646">
 
 ### Application's IndexedDB Storage
 
 <img width="1716" alt="Screenshot 2023-09-30 at 3 44 04 pm" src="https://github.com/jarrodbb/Text-Editor/assets/132813348/980b0bfa-899e-46be-b25e-b54ee010ae83">
 
+![Screenshot 2023-09-30 at 5 11 51 pm](https://github.com/jarrodbb/Text-Editor/assets/132813348/971146bf-cabc-477c-9d9d-22d83e7836b5)
+
+After closing the browser and reopening the application, the data is retrieved from ```indexedDB``` 
+
 ### Offline capability
+
+Click on the install button to install the application
 
 <img width="1726" alt="Screenshot 2023-09-30 at 3 46 07 pm" src="https://github.com/jarrodbb/Text-Editor/assets/132813348/df175016-0b4d-45d9-bcff-19956cc660ae">
 
