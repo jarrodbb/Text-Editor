@@ -1,3 +1,4 @@
+//import openDB from idb to allow for connection to IndexedDB
 import { openDB } from "idb";
 
 const initdb = async () =>
@@ -9,11 +10,12 @@ const initdb = async () =>
         console.log("jate database already exists");
         return;
       }
-      //Create a new object store and give key name 'id" and auto increment
+      //Create a new object store 'jate' and give key name 'id" and auto increment
       db.createObjectStore("jate", {
         keyPath: "id",
         autoIncrement: true,
       });
+      //Console message that the database is created
       console.log("jate database created");
     },
   });

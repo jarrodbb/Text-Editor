@@ -8,6 +8,7 @@ const { InjectManifest } = require("workbox-webpack-plugin");
 
 module.exports = (env, argv) => {
   const injectManifest = new InjectManifest({
+    //reference custom service worker location
     swSrc: "./src-sw.js",
     swDest: "src-sw.js",
     ...(argv.mode !== "production" ? { exclude: [/./] } : {}),
