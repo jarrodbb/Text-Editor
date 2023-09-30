@@ -87,11 +87,23 @@ This Text-Editor is a deployed application. Please see below the link to view th
 
 ### Application's `manifest.json` file
 
+<img width="1726" alt="Screenshot 2023-09-30 at 3 32 11 pm" src="https://github.com/jarrodbb/Text-Editor/assets/132813348/99aa3d3f-106a-479b-b09a-f2721d21343d">
+
+<img width="1722" alt="Screenshot 2023-09-30 at 3 32 36 pm" src="https://github.com/jarrodbb/Text-Editor/assets/132813348/52afa3c6-fbac-48ca-bff1-63556acee7bd">
+
 ### Application's registered service worker
+
+<img width="1727" alt="Screenshot 2023-09-30 at 3 42 00 pm" src="https://github.com/jarrodbb/Text-Editor/assets/132813348/aa6037ed-9a89-407b-88de-76466187a646">
 
 ### Application's IndexedDB Storage
 
+<img width="1716" alt="Screenshot 2023-09-30 at 3 44 04 pm" src="https://github.com/jarrodbb/Text-Editor/assets/132813348/980b0bfa-899e-46be-b25e-b54ee010ae83">
+
 ### Offline capability
+
+<img width="1726" alt="Screenshot 2023-09-30 at 3 46 07 pm" src="https://github.com/jarrodbb/Text-Editor/assets/132813348/df175016-0b4d-45d9-bcff-19956cc660ae">
+
+<img width="1728" alt="Screenshot 2023-09-30 at 3 46 58 pm" src="https://github.com/jarrodbb/Text-Editor/assets/132813348/d62f5b88-732b-4280-8567-ab4934ccccb7">
 
 ## License
 
