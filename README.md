@@ -33,7 +33,7 @@ The by utilising a number of methods using the ```idb``` package data is stored 
 
 ### Client Package.json
 
-Ensure the following are included in the client package.json
+Ensure the following are included in the ```client package.json```
 
 ```
  "devDependencies": {
@@ -62,7 +62,7 @@ Ensure the following are included in the client package.json
 
 ### Server Package.json
 
-Ensure the following are included in the server package.json
+Ensure the following are included in the ```server package.json```
 
 ```
  "dependencies": {
