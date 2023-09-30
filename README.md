@@ -9,6 +9,15 @@
 ![nodemon](https://img.shields.io/badge/nodemon-3.0.1-black)
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 
+This text Editior is a single page web application that meets Progressive Web Application (PWA) .
+
+This PWA meets the following standards,
+
+- A number of data persistent techniques are utilised to serve as redundancies if one of the options is not supported by the browser.
+- Offline functionality
+
+The by utilising a number of methods using the ```idb``` package data is stored in the indexedDB Database
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -20,6 +29,49 @@
 ## Installation
 
 ### Running the application
+
+## Client Package.json
+
+Ensure the following are included in the client package.json
+
+```
+ "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/runtime": "^7.15.3",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "http-server": "^0.11.1",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.0.0",
+    "webpack-pwa-manifest": "^4.3.0",
+    "workbox-webpack-plugin": "^6.2.4",
+    "eslint": "^7.12.1"
+  },
+  "dependencies": {
+    "code-mirror-themes": "^1.0.0",
+    "idb": "^6.1.2"
+  }
+```
+
+### Server Package.json
+
+Ensure the following are included in the server package.json
+
+```
+ "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "eslint": "^7.12.1"
+  }
+```
 
 In the terminal run `npm run start` in the root of the application. This will start the application in the backend and serve the client. 
 
@@ -77,8 +129,23 @@ This Text-Editor is a deployed application. Please see below the link to view th
 <p><a href="https://www.npmjs.com/package/express">Express.js</a></p>
 <p><a href="https://nodemon.io/">nodemon</a></p>
 <p><a href="https://webpack.js.org/">webpack</a></p>
+<p><a href="https://www.npmjs.com/package/@babel/core">Babel core</a></p>
+<p><a href="https://www.npmjs.com/package/@babel/plugin-proposal-object-rest-spread">babel/plugin-proposal-object-rest-spread</a></p>
+<p><a href="https://www.npmjs.com/package/@babel/plugin-transform-runtime">babel plugin-transform-runtime</a></p>
+<p><a href="https://www.npmjs.com/package/@babel/preset-env">babel preset-env</a></p>
+<p><a href="https://www.npmjs.com/package/@babel/runtime">babel runtime</a></p>
+<p><a href="https://www.npmjs.com/package/babel-loader">babel-loader</a></p>
+<p><a href="https://webpack.js.org/loaders/css-loader/">Webpack css-loader</a></p>
+<p><a href="https://webpack.js.org/plugins/html-webpack-plugin/">Webpack html-webpack-plugin</a></p>
+<p><a href="https://www.npmjs.com/package/http-server">http-server</a></p>
+<p><a href="https://www.npmjs.com/package/webpack-cli">webpack-cli</a></p>
+<p><a href="https://webpack.js.org/configuration/dev-server/">webpack-dev-serve</a></p>
+<p><a href="https://www.npmjs.com/package/webpack-pwa-manifest">webpack-pwa-manifest</a></p>
+<p><a href="https://www.npmjs.com/package/workbox-webpack-plugin">workbox-webpack-plugin</a></p>
 
 ## Usage
+
+The user is able to add text to the text editor application in the browser as well as the ability to install the application locally
 
 [its-a-text-editor](https://its-a-text-editor-6c1743480971.herokuapp.com/)
 
