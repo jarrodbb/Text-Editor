@@ -8,6 +8,7 @@
 ![eslint](https://img.shields.io/badge/eslint-v7.12.1-lightgrey)
 ![nodemon](https://img.shields.io/badge/nodemon-3.0.1-black)
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
+![Babel](https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black)
 
 This text Editior is a single page web application that meets Progressive Web Application (PWA) .
 
@@ -73,7 +74,9 @@ Ensure the following are included in the server package.json
   }
 ```
 
-In the terminal run `npm run start` in the root of the application. This will start the application in the backend and serve the client. 
+In the terminal run ```npm install``` in the root of the application to ensure all the packages for both the client and the server are installed 
+
+Then run, `npm run start` in the root of the application. This will start the application in the backend and serve the client. 
 
 <img width="1462" alt="Screenshot 2023-09-30 at 3 14 02 pm" src="https://github.com/jarrodbb/Text-Editor/assets/132813348/cac849a0-7768-449f-b7c5-a2437830c84d">
 
