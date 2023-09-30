@@ -17,7 +17,7 @@ This PWA meets the following standards,
 - A number of data persistent techniques are utilised to serve as redundancies if one of the options is not supported by the browser.
 - Offline functionality
 
-The by utilising a number of methods using the ```idb``` package data is stored in the indexedDB Database
+Additionally by utilising a number of methods using the ```idb``` package data is stored in the indexedDB Database
 
 ## Table of Contents
 
