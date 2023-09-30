@@ -10,7 +10,7 @@
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 ![Babel](https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black)
 
-This Text Editor is a single page web application that meets Progressive Web Application (PWA) .
+This Text Editor is a single page web application that meets Progressive Web Application (PWA) criteria.
 
 This PWA meets the following standards,
 
