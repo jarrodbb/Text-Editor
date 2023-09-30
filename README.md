@@ -24,6 +24,8 @@ In the terminal run `npm run start` in the root of the application. This will st
 
 Webpack will create a dist folder that has bundled the JavaScript files. 
 
+![Untitled_ Sep 30, 2023 2_56 PM (4)](https://github.com/jarrodbb/Text-Editor/assets/132813348/7e16afae-3814-4688-867c-9e0afcdfd249)
+
 Webpack will also generate a HTML file, service worker and a manifest file
 
 By including Babel in the ```webpack.config.js``` next-gen JavaScript can be utilised in the application
