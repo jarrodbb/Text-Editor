@@ -131,13 +131,13 @@ This Text-Editor is a deployed application. Please see below the link to view th
 <p><a href="https://www.npmjs.com/">NPM</a></p>
 <p><a href="https://www.npmjs.com/package/express">Express.js</a></p>
 <p><a href="https://nodemon.io/">nodemon</a></p>
-<p><a href="https://webpack.js.org/">webpack</a></p>
 <p><a href="https://www.npmjs.com/package/@babel/core">Babel core</a></p>
 <p><a href="https://www.npmjs.com/package/@babel/plugin-proposal-object-rest-spread">babel/plugin-proposal-object-rest-spread</a></p>
 <p><a href="https://www.npmjs.com/package/@babel/plugin-transform-runtime">babel plugin-transform-runtime</a></p>
 <p><a href="https://www.npmjs.com/package/@babel/preset-env">babel preset-env</a></p>
 <p><a href="https://www.npmjs.com/package/@babel/runtime">babel runtime</a></p>
 <p><a href="https://www.npmjs.com/package/babel-loader">babel-loader</a></p>
+<p><a href="https://webpack.js.org/">webpack</a></p>
 <p><a href="https://webpack.js.org/loaders/css-loader/">Webpack css-loader</a></p>
 <p><a href="https://webpack.js.org/plugins/html-webpack-plugin/">Webpack html-webpack-plugin</a></p>
 <p><a href="https://www.npmjs.com/package/http-server">http-server</a></p>
