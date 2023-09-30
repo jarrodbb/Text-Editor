@@ -17,7 +17,7 @@ This PWA meets the following standards,
 - A number of data persistent techniques are utilised to serve as redundancies if one of the options is not supported by the browser.
 - Offline functionality
 
-Additionally by utilising a number of methods using the ```idb``` package data is stored in the indexedDB Database
+Additionally by utilising a number of methods using the ```idb package``` data is stored in the indexedDB Database
 
 ## Table of Contents
 
@@ -157,6 +157,8 @@ The user is able to add text to the text editor application in the browser as we
 <img width="1727" alt="Screenshot 2023-09-30 at 3 26 29 pm" src="https://github.com/jarrodbb/Text-Editor/assets/132813348/6a51ce3f-3abb-474e-9c90-6511e2ec5083">
 
 ### Application's `manifest.json` file
+
+The ```manifest.json``` is required to allow for the application to be installable
 
 <img width="1726" alt="Screenshot 2023-09-30 at 3 32 11 pm" src="https://github.com/jarrodbb/Text-Editor/assets/132813348/99aa3d3f-106a-479b-b09a-f2721d21343d">
 
