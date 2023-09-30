@@ -7,6 +7,7 @@
 ![express](https://img.shields.io/badge/express-v4.17.1-orange)
 ![eslint](https://img.shields.io/badge/eslint-v7.12.1-lightgrey)
 ![nodemon](https://img.shields.io/badge/nodemon-3.0.1-black)
+![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 
 ## Table of Contents
 
