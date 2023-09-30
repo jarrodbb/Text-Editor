@@ -18,9 +18,20 @@
 
 ## Installation
 
-This Text-Editor is a deployed application. Please see below the link to view the site. Have fun
+### Running the application
+
+In the terminal run `npm run start` in the root of the application. This will start the application in the backend and serve the client. 
+
+Webpack will create a dist folder that has bundled the JavaScript files. 
+
+Webpack will also generate a HTML file, service worker and a manifest file
+
+By including Babel in the ```webpack.config.js``` next-gen JavaScript can be utilised in the application
+
 
 ### Deployed Link
+
+This Text-Editor is a deployed application. Please see below the link to view the site. Have fun
 
 [its-a-text-editor](https://its-a-text-editor-6c1743480971.herokuapp.com/)
 
